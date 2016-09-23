@@ -6,7 +6,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   models.Property.findAll().then(function(properties) {
     res.render('index', {
-      title: 'Available Properties',
+      title: 'Air BnBird',
       properties: properties,
     });
   });

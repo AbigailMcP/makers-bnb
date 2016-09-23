@@ -2,21 +2,23 @@ extends layout
 
 block content
 
-  h3 Sign up to book accommodation
+  .container
 
-  form.form-horizontal(action='/users', method='POST')
-    .form-group
-      .col-sm-3
-        input.form-control(type='text', name='name', placeholder='Full Name')
-    .form-group
-      .col-sm-3
-        input.form-control(type='email', name='email', placeholder='Email Address')
-    .form-group
-      .col-sm-3
-        input.form-control(type='password', name='password', placeholder='Password')
-    .form-group
-      .col-sm-3
-        input.form-control(type='password', name='password_confirmation', placeholder='Confirm password')
-    .form-group
-      .col-sm-offset-1.col-sm-1
-        button.btn.btn-default(type='submit') Sign up!
+    h3 Sign up to book accommodation
+    br
+    form.form-horizontal(action='/users', method='POST')
+      .form-group
+        .col-sm-3
+          input.form-control(type='text', name='name', placeholder='Full Name')
+      .form-group
+        .col-sm-3
+          input.form-control(type='email', name='email', placeholder='Email Address')
+      .form-group
+        .col-sm-3
+          input.form-control(type='password', name='password', placeholder='Password')
+      .form-group
+        .col-sm-3
+          input.form-control(type='password', name='password_confirmation', placeholder='Confirm password')
+      .form-group
+        .col-sm-offset-1.col-sm-1
+          button.btn.btn-default(type='submit') Sign up!
