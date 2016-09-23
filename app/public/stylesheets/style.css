@@ -1,8 +1,7 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
-a {
-  color: #00B7FF;
+.jumbotron {
+  background-image: url("../images/birdface.jpg");
+  background-size: cover;
+  min-height: 400px;
+  height: 100%;
 }

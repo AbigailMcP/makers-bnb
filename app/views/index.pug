@@ -1,10 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  h2= Welcome
+
+.jumbotron
 
   .container
+
+    h1= title
+  
     each val in properties
       .panel.panel-default
         .panel-heading
