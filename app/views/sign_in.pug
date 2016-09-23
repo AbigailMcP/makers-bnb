@@ -2,16 +2,18 @@ extends layout
 
 block content
 
-  h1 Please sign in
+  .container
 
-  form.form-horizontal(action='/sessions', method='POST')
-    .form-group
-      .col-sm-5
-        input.form-control(name='email', type='email', placeholder='Email')
-    .form-group
-      .col-sm-5
-        input.form-control(name='password', type='password', placeholder='Password')
+    h3 Please sign in
+    br
+    form.form-horizontal(action='/sessions', method='POST')
+      .form-group
+        .col-sm-5
+          input.form-control(name='email', type='email', placeholder='Email')
+      .form-group
+        .col-sm-5
+          input.form-control(name='password', type='password', placeholder='Password')
 
-    .form-group
-      .col-sm-offset-2.col-sm-10
-        button.btn.btn-default(type='submit') Sign in
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          button.btn.btn-default(type='submit') Sign in

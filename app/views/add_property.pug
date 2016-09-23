@@ -2,21 +2,24 @@ extends layout
 
 block content
 
-  if sess === undefined
-    h1 ¯\_(ツ)_/¯
+  .container
 
-  else
-    h1 Add a new property
-    form.form-horizontal(action='/properties', method='POST')
-      .form-group
-        .col-sm-3
-          input.form-control(type='text', name='name', placeholder='Property Name')
-      .form-group
-        .col-sm-3
-          input.form-control(type='text', name='description', placeholder='Description')
-      .form-group
-        .col-sm-3
-          input.form-control(type='number', name='price', placeholder='Price per night')
-      .form-group
-        .col-sm-offset-1.col-sm-1
-          button.btn.btn-default(type='submit') Submit!
+    if sess === undefined
+      h1 ¯\_(ツ)_/¯
+
+    else
+      h3 Add a new property
+      br
+      form.form-horizontal(action='/properties', method='POST')
+        .form-group
+          .col-sm-3
+            input.form-control(type='text', name='name', placeholder='Property Name')
+        .form-group
+          .col-sm-3
+            input.form-control(type='text', name='description', placeholder='Description')
+        .form-group
+          .col-sm-3
+            input.form-control(type='number', name='price', placeholder='Price per night')
+        .form-group
+          .col-sm-offset-1.col-sm-1
+            button.btn.btn-default(type='submit') Submit!
