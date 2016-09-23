@@ -1,16 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  h2= Welcome
 
-  ul
-    each val in properties
-      li= val.dataValues.Name + ' '
-      li= val.dataValues.description + ' '
-      li= val.dataValues.price + ' '
+  .jumbotron
 
-      a(href="properties/" + val.dataValues.id) view property
+    .container
+
+      h1= title
+      h2= Welcome
+
+      ul
+        each val in properties
+          li= val.dataValues.Name + ' '
+          li= val.dataValues.description + ' '
+          li= val.dataValues.price + ' '
+
+          a(href="properties/" + val.dataValues.id) view property
 
 
-      br
+          br
