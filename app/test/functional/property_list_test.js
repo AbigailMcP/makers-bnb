@@ -20,7 +20,7 @@ describe('add property page', function() {
     .fill('name', 'Beautiful flat')
     .fill('description', 'close to center')
     .fill('price', 250)
-    .pressButton('Submit', done);
+    .pressButton('Submit!', done);
   });
 
   before(function(done) {
@@ -29,10 +29,6 @@ describe('add property page', function() {
 
   it('should be successful', function() {
     browser.assert.success();
-  });
-
-  it('should display listed property', function() {
-    browser.assert.text('title', 'Available Properties');
   });
 
   it('should display listed property', function() {
